@@ -16,5 +16,11 @@ namespace Trabalho_de_POO
         {
             InitializeComponent();
         }
+        // os nomes dos campos estão modificados, o combombox ta combo e seu numero em ordem
+        //EX: combom_1
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

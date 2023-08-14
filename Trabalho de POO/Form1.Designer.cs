@@ -29,92 +29,99 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.lab_ = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lab_1 = new System.Windows.Forms.Label();
+            this.lab_2 = new System.Windows.Forms.Label();
+            this.lab_6 = new System.Windows.Forms.Label();
+            this.lab_3 = new System.Windows.Forms.Label();
+            this.lab_7 = new System.Windows.Forms.Label();
+            this.lab_4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.text_1 = new System.Windows.Forms.TextBox();
+            this.text_3 = new System.Windows.Forms.TextBox();
+            this.text_6 = new System.Windows.Forms.TextBox();
+            this.lab_5 = new System.Windows.Forms.Label();
+            this.combo_4 = new System.Windows.Forms.ComboBox();
+            this.combo_5 = new System.Windows.Forms.ComboBox();
+            this.text_mask_7 = new System.Windows.Forms.MaskedTextBox();
+            this.text_mask_2 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(190, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(449, 60);
+            this.label1.Size = new System.Drawing.Size(440, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Processo";
             // 
-            // lab_
+            // lab_1
             // 
-            this.lab_.AutoSize = true;
-            this.lab_.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_.Location = new System.Drawing.Point(12, 131);
-            this.lab_.Name = "lab_";
-            this.lab_.Size = new System.Drawing.Size(87, 37);
-            this.lab_.TabIndex = 1;
-            this.lab_.Text = "Nome:";
+            this.lab_1.AutoSize = true;
+            this.lab_1.BackColor = System.Drawing.Color.Transparent;
+            this.lab_1.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_1.Location = new System.Drawing.Point(12, 131);
+            this.lab_1.Name = "lab_1";
+            this.lab_1.Size = new System.Drawing.Size(87, 37);
+            this.lab_1.TabIndex = 1;
+            this.lab_1.Text = "Nome:";
             // 
-            // label3
+            // lab_2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 212);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 37);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "CPF:";
+            this.lab_2.AutoSize = true;
+            this.lab_2.BackColor = System.Drawing.Color.Transparent;
+            this.lab_2.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_2.Location = new System.Drawing.Point(12, 212);
+            this.lab_2.Name = "lab_2";
+            this.lab_2.Size = new System.Drawing.Size(69, 37);
+            this.lab_2.TabIndex = 2;
+            this.lab_2.Text = "CPF:";
             // 
-            // label4
+            // lab_6
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(505, 275);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 37);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Tipo:";
+            this.lab_6.AutoSize = true;
+            this.lab_6.BackColor = System.Drawing.Color.Transparent;
+            this.lab_6.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_6.Location = new System.Drawing.Point(505, 275);
+            this.lab_6.Name = "lab_6";
+            this.lab_6.Size = new System.Drawing.Size(71, 37);
+            this.lab_6.TabIndex = 3;
+            this.lab_6.Text = "Tipo:";
             // 
-            // label5
+            // lab_3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 305);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 37);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Endereço:";
+            this.lab_3.AutoSize = true;
+            this.lab_3.BackColor = System.Drawing.Color.Transparent;
+            this.lab_3.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_3.Location = new System.Drawing.Point(12, 305);
+            this.lab_3.Name = "lab_3";
+            this.lab_3.Size = new System.Drawing.Size(126, 37);
+            this.lab_3.TabIndex = 4;
+            this.lab_3.Text = "Endereço:";
             // 
-            // label6
+            // lab_7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(458, 358);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 37);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Telefone:";
+            this.lab_7.AutoSize = true;
+            this.lab_7.BackColor = System.Drawing.Color.Transparent;
+            this.lab_7.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_7.Location = new System.Drawing.Point(458, 358);
+            this.lab_7.Name = "lab_7";
+            this.lab_7.Size = new System.Drawing.Size(118, 37);
+            this.lab_7.TabIndex = 5;
+            this.lab_7.Text = "Telefone:";
             // 
-            // label7
+            // lab_4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(388, 131);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(251, 37);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Grau de Escolaridade:";
+            this.lab_4.AutoSize = true;
+            this.lab_4.BackColor = System.Drawing.Color.Transparent;
+            this.lab_4.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_4.Location = new System.Drawing.Point(388, 131);
+            this.lab_4.Name = "lab_4";
+            this.lab_4.Size = new System.Drawing.Size(251, 37);
+            this.lab_4.TabIndex = 6;
+            this.lab_4.Text = "Grau de Escolaridade:";
             // 
             // button1
             // 
@@ -125,104 +132,107 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // text_1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(105, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 31);
-            this.textBox1.TabIndex = 8;
+            this.text_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_1.Location = new System.Drawing.Point(105, 137);
+            this.text_1.Name = "text_1";
+            this.text_1.Size = new System.Drawing.Size(176, 31);
+            this.text_1.TabIndex = 8;
             // 
-            // textBox3
+            // text_3
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(134, 305);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(160, 31);
-            this.textBox3.TabIndex = 10;
+            this.text_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_3.Location = new System.Drawing.Point(134, 305);
+            this.text_3.Name = "text_3";
+            this.text_3.Size = new System.Drawing.Size(160, 31);
+            this.text_3.TabIndex = 10;
             // 
-            // textBox5
+            // text_6
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(591, 276);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(199, 31);
-            this.textBox5.TabIndex = 12;
+            this.text_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_6.Location = new System.Drawing.Point(591, 276);
+            this.text_6.Name = "text_6";
+            this.text_6.Size = new System.Drawing.Size(199, 31);
+            this.text_6.TabIndex = 12;
             // 
-            // label8
+            // lab_5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(489, 197);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 37);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Status:";
+            this.lab_5.AutoSize = true;
+            this.lab_5.BackColor = System.Drawing.Color.Transparent;
+            this.lab_5.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_5.Location = new System.Drawing.Point(489, 197);
+            this.lab_5.Name = "lab_5";
+            this.lab_5.Size = new System.Drawing.Size(87, 37);
+            this.lab_5.TabIndex = 14;
+            this.lab_5.Text = "Status:";
             // 
-            // comboBox1
+            // combo_4
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(645, 128);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(207, 34);
-            this.comboBox1.TabIndex = 15;
+            this.combo_4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_4.FormattingEnabled = true;
+            this.combo_4.Location = new System.Drawing.Point(645, 128);
+            this.combo_4.Name = "combo_4";
+            this.combo_4.Size = new System.Drawing.Size(207, 34);
+            this.combo_4.TabIndex = 15;
             // 
-            // comboBox2
+            // combo_5
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(591, 197);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(216, 34);
-            this.comboBox2.TabIndex = 16;
+            this.combo_5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_5.FormattingEnabled = true;
+            this.combo_5.Location = new System.Drawing.Point(591, 197);
+            this.combo_5.Name = "combo_5";
+            this.combo_5.Size = new System.Drawing.Size(216, 34);
+            this.combo_5.TabIndex = 16;
             // 
-            // maskedTextBox1
+            // text_mask_7
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(582, 358);
-            this.maskedTextBox1.Mask = "(00) 0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(138, 30);
-            this.maskedTextBox1.TabIndex = 17;
+            this.text_mask_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_mask_7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_mask_7.Location = new System.Drawing.Point(582, 358);
+            this.text_mask_7.Mask = "(00) 0000-0000";
+            this.text_mask_7.Name = "text_mask_7";
+            this.text_mask_7.Size = new System.Drawing.Size(138, 30);
+            this.text_mask_7.TabIndex = 17;
             // 
-            // maskedTextBox2
+            // text_mask_2
             // 
-            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(87, 212);
-            this.maskedTextBox2.Mask = "000,000,000-00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(162, 30);
-            this.maskedTextBox2.TabIndex = 18;
+            this.text_mask_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_mask_2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_mask_2.Location = new System.Drawing.Point(87, 212);
+            this.text_mask_2.Mask = "000,000,000-00";
+            this.text_mask_2.Name = "text_mask_2";
+            this.text_mask_2.Size = new System.Drawing.Size(162, 30);
+            this.text_mask_2.TabIndex = 18;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImage = global::Trabalho_de_POO.Properties.Resources.imagem3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(894, 566);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.text_mask_2);
+            this.Controls.Add(this.text_mask_7);
+            this.Controls.Add(this.combo_5);
+            this.Controls.Add(this.combo_4);
+            this.Controls.Add(this.lab_5);
+            this.Controls.Add(this.text_6);
+            this.Controls.Add(this.text_3);
+            this.Controls.Add(this.text_1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lab_);
+            this.Controls.Add(this.lab_4);
+            this.Controls.Add(this.lab_7);
+            this.Controls.Add(this.lab_3);
+            this.Controls.Add(this.lab_6);
+            this.Controls.Add(this.lab_2);
+            this.Controls.Add(this.lab_1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Cadastro de Processos";
@@ -234,21 +244,21 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lab_;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lab_1;
+        private System.Windows.Forms.Label lab_2;
+        private System.Windows.Forms.Label lab_6;
+        private System.Windows.Forms.Label lab_3;
+        private System.Windows.Forms.Label lab_7;
+        private System.Windows.Forms.Label lab_4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TextBox text_1;
+        private System.Windows.Forms.TextBox text_3;
+        private System.Windows.Forms.TextBox text_6;
+        private System.Windows.Forms.Label lab_5;
+        private System.Windows.Forms.ComboBox combo_4;
+        private System.Windows.Forms.ComboBox combo_5;
+        private System.Windows.Forms.MaskedTextBox text_mask_7;
+        private System.Windows.Forms.MaskedTextBox text_mask_2;
     }
 }
 
