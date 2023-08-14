@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lab_ = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,15 +56,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Processo";
             // 
-            // label2
+            // lab_
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 131);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nome:";
+            this.lab_.AutoSize = true;
+            this.lab_.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_.Location = new System.Drawing.Point(12, 131);
+            this.lab_.Name = "lab_";
+            this.lab_.Size = new System.Drawing.Size(87, 37);
+            this.lab_.TabIndex = 1;
+            this.lab_.Text = "Nome:";
             // 
             // label3
             // 
@@ -222,7 +222,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lab_);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Cadastro de Processos";
@@ -234,7 +234,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lab_;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
