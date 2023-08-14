@@ -1,0 +1,11 @@
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\bin\Debug\Trabalho de POO.exe.config
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\bin\Debug\Trabalho de POO.exe
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\bin\Debug\Trabalho de POO.pdb
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.AssemblyReference.cache
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.SuggestedBindingRedirects.cache
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho_de_POO.Form1.resources
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho_de_POO.Properties.Resources.resources
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.GenerateResource.cache
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.CoreCompileInputs.cache
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.exe
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.pdb
