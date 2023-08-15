@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pessoa));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Nome_txt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Email_txt = new System.Windows.Forms.TextBox();
+            this.Endereco_txt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.RG_txt = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,8 +47,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.CPF_txtmask = new System.Windows.Forms.MaskedTextBox();
+            this.Telefone_txtmask = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,14 +63,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome:";
             // 
-            // textBox1
+            // Nome_txt
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(101, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 31);
-            this.textBox1.TabIndex = 1;
+            this.Nome_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Nome_txt.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nome_txt.Location = new System.Drawing.Point(101, 136);
+            this.Nome_txt.Name = "Nome_txt";
+            this.Nome_txt.Size = new System.Drawing.Size(254, 31);
+            this.Nome_txt.TabIndex = 1;
             // 
             // label2
             // 
@@ -116,23 +116,23 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Endereço:";
             // 
-            // textBox3
+            // Email_txt
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(668, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(226, 31);
-            this.textBox3.TabIndex = 7;
+            this.Email_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Email_txt.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email_txt.Location = new System.Drawing.Point(668, 136);
+            this.Email_txt.Name = "Email_txt";
+            this.Email_txt.Size = new System.Drawing.Size(226, 31);
+            this.Email_txt.TabIndex = 7;
             // 
-            // textBox4
+            // Endereco_txt
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(645, 235);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 31);
-            this.textBox4.TabIndex = 8;
+            this.Endereco_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Endereco_txt.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Endereco_txt.Location = new System.Drawing.Point(645, 235);
+            this.Endereco_txt.Name = "Endereco_txt";
+            this.Endereco_txt.Size = new System.Drawing.Size(222, 31);
+            this.Endereco_txt.TabIndex = 8;
             // 
             // label6
             // 
@@ -156,14 +156,14 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "RG:";
             // 
-            // textBox6
+            // RG_txt
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(611, 315);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(129, 31);
-            this.textBox6.TabIndex = 12;
+            this.RG_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RG_txt.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RG_txt.Location = new System.Drawing.Point(611, 315);
+            this.RG_txt.Name = "RG_txt";
+            this.RG_txt.Size = new System.Drawing.Size(129, 31);
+            this.RG_txt.TabIndex = 12;
             // 
             // dataGridView1
             // 
@@ -194,6 +194,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Alterar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -227,6 +228,7 @@
             this.button2.TabIndex = 24;
             this.button2.Text = "Novo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button5
             // 
@@ -238,26 +240,27 @@
             this.button5.TabIndex = 26;
             this.button5.Text = "Salvar";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // maskedTextBox1
+            // CPF_txtmask
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(101, 235);
-            this.maskedTextBox1.Mask = "000,000,000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(172, 31);
-            this.maskedTextBox1.TabIndex = 27;
+            this.CPF_txtmask.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CPF_txtmask.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPF_txtmask.Location = new System.Drawing.Point(101, 235);
+            this.CPF_txtmask.Mask = "000,000,000-00";
+            this.CPF_txtmask.Name = "CPF_txtmask";
+            this.CPF_txtmask.Size = new System.Drawing.Size(172, 31);
+            this.CPF_txtmask.TabIndex = 27;
             // 
-            // maskedTextBox2
+            // Telefone_txtmask
             // 
-            this.maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(136, 327);
-            this.maskedTextBox2.Mask = "(00) 0000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(172, 31);
-            this.maskedTextBox2.TabIndex = 28;
+            this.Telefone_txtmask.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Telefone_txtmask.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Telefone_txtmask.Location = new System.Drawing.Point(136, 327);
+            this.Telefone_txtmask.Mask = "(00) 0000-0000";
+            this.Telefone_txtmask.Name = "Telefone_txtmask";
+            this.Telefone_txtmask.Size = new System.Drawing.Size(172, 31);
+            this.Telefone_txtmask.TabIndex = 28;
             // 
             // Pessoa
             // 
@@ -267,8 +270,8 @@
             this.BackgroundImage = global::Trabalho_de_POO.Properties.Resources.imagem3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(930, 805);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.Telefone_txtmask);
+            this.Controls.Add(this.CPF_txtmask);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -276,16 +279,16 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.RG_txt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Endereco_txt);
+            this.Controls.Add(this.Email_txt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Nome_txt);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pessoa";
@@ -299,16 +302,16 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Nome_txt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Email_txt;
+        private System.Windows.Forms.TextBox Endereco_txt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox RG_txt;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
@@ -316,7 +319,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox CPF_txtmask;
+        private System.Windows.Forms.MaskedTextBox Telefone_txtmask;
     }
 }

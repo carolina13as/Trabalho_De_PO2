@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Trabalho_de_POO
 {
-    public partial class Form1 : Form
+    public partial class Processo : Form
     {
-        public Form1()
+        public Processo()
         {
             InitializeComponent();
         }
@@ -26,6 +26,12 @@ namespace Trabalho_de_POO
         private void button4_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Pessoa a = new Pessoa();
+            a.ShowDialog();
         }
     }
 }

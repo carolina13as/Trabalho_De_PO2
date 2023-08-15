@@ -1,6 +1,6 @@
 ﻿namespace Trabalho_de_POO
 {
-    partial class Form1
+    partial class Processo
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Processo));
             this.label1 = new System.Windows.Forms.Label();
             this.lab_1 = new System.Windows.Forms.Label();
             this.lab_2 = new System.Windows.Forms.Label();
@@ -37,7 +37,7 @@
             this.lab_7 = new System.Windows.Forms.Label();
             this.lab_4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.text_1 = new System.Windows.Forms.TextBox();
+            this.ID = new System.Windows.Forms.TextBox();
             this.text_3 = new System.Windows.Forms.TextBox();
             this.text_6 = new System.Windows.Forms.TextBox();
             this.combo_4 = new System.Windows.Forms.ComboBox();
@@ -141,15 +141,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // text_1
+            // ID
             // 
-            this.text_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.text_1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_1.Location = new System.Drawing.Point(65, 130);
-            this.text_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.text_1.Name = "text_1";
-            this.text_1.Size = new System.Drawing.Size(60, 31);
-            this.text_1.TabIndex = 8;
+            this.ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ID.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID.Location = new System.Drawing.Point(65, 130);
+            this.ID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(60, 31);
+            this.ID.TabIndex = 8;
             // 
             // text_3
             // 
@@ -175,7 +175,7 @@
             // 
             this.combo_4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combo_4.FormattingEnabled = true;
-            this.combo_4.Location = new System.Drawing.Point(635, 390);
+            this.combo_4.Location = new System.Drawing.Point(635, 388);
             this.combo_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.combo_4.Name = "combo_4";
             this.combo_4.Size = new System.Drawing.Size(246, 34);
@@ -255,6 +255,7 @@
             this.button5.TabIndex = 25;
             this.button5.Text = "Salvar";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridView1
             // 
@@ -266,7 +267,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(844, 236);
             this.dataGridView1.TabIndex = 26;
             // 
-            // Form1
+            // Processo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -285,7 +286,7 @@
             this.Controls.Add(this.combo_4);
             this.Controls.Add(this.text_6);
             this.Controls.Add(this.text_3);
-            this.Controls.Add(this.text_1);
+            this.Controls.Add(this.ID);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lab_4);
             this.Controls.Add(this.lab_7);
@@ -296,7 +297,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
+            this.Name = "Processo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Processos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -315,7 +316,7 @@
         private System.Windows.Forms.Label lab_7;
         private System.Windows.Forms.Label lab_4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox text_1;
+        private System.Windows.Forms.TextBox ID;
         private System.Windows.Forms.TextBox text_3;
         private System.Windows.Forms.TextBox text_6;
         private System.Windows.Forms.ComboBox combo_4;
