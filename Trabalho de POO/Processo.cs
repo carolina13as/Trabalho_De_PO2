@@ -31,7 +31,7 @@ namespace Trabalho_de_POO
         private void button5_Click(object sender, EventArgs e)
         {
             Pessoa a = new Pessoa();
-            a.ShowDialog();
+            a.Show();
         }
     }
 }

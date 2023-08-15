@@ -12,6 +12,7 @@ namespace Trabalho_de_POO
 {
     public partial class Pessoa : Form
     {
+        public List<C_Pessoa > pessoaList = new List<C_Pessoa>();
 
         public Pessoa()
         {
@@ -44,6 +45,28 @@ namespace Trabalho_de_POO
             string rg = RG_txt.Text;
 
             C_Pessoa a = new C_Pessoa(nome,cpf,telefone,email,endereco,rg);
+            pessoaList.Add(a);
+
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = pessoaList;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            int index = dataGridView1.CurrentCell.RowIndex;
+            pessoaList.RemoveAt(index);
+
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = pessoaList;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int index = dataGridView1.CurrentCell.RowIndex;
         }
     }
 }

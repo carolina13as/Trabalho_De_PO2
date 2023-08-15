@@ -23,10 +23,15 @@ namespace Trabalho_de_POO
             a.ShowDialog();
         }
 
+
+        List<C_Pessoa> Lista = new List<C_Pessoa>();
+
+
         private void button2_Click(object sender, EventArgs e)
         {
             Pessoa a = new Pessoa();
             a.ShowDialog();
         }
+
     }
 }

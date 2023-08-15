@@ -11,7 +11,7 @@
 
     public C_Pessoa(string nome,string cPF, string telefone, string email,string endereco, string rG)
     {
-        this .Nome = Nome;
+        this .Nome = nome;
         this .CPF = cPF;
         this .Telefone = telefone;
         this .Email = email;
