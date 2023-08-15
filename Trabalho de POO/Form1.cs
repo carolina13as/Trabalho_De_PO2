@@ -22,5 +22,11 @@ namespace Trabalho_de_POO
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Processo processo = new Processo();
+            processo.ShowDialog();
+        }
     }
 }

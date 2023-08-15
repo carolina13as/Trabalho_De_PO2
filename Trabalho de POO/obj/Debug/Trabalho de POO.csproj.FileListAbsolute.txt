@@ -9,3 +9,4 @@ C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Traba
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.CoreCompileInputs.cache
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.exe
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.pdb
+C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho_de_POO.Processo.resources
