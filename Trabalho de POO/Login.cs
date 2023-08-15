@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Trabalho_de_POO
 {
-    public partial class Processo : Form
+    public partial class Login : Form
     {
-        public Processo()
+        public Login()
         {
             InitializeComponent();
         }
