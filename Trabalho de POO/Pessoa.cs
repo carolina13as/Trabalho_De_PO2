@@ -31,8 +31,18 @@ namespace Trabalho_de_POO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu a = new Menu();
-            a.ShowDialog();
+
+            int index = dataGridView1.CurrentCell.RowIndex;
+            pessoaList[index].Nome = Nome_txt.Text;
+            pessoaList[index].CPF = CPF_txtmask.Text;
+            pessoaList[index].Email = Email_txt.Text;
+            pessoaList[index].Endereco = Endereco_txt.Text;
+            pessoaList[index].Telefone = Telefone_txtmask.Text;
+            pessoaList[index].RG = RG_txt.Text;
+
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = pessoaList;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -67,6 +77,19 @@ namespace Trabalho_de_POO
         private void button4_Click(object sender, EventArgs e)
         {
             int index = dataGridView1.CurrentCell.RowIndex;
+            Nome_txt.Text = pessoaList[index].Nome;
+            CPF_txtmask.Text = pessoaList[index].CPF;
+            Email_txt.Text = pessoaList[index].Email;
+            Endereco_txt.Text = pessoaList[index].Endereco;
+            Telefone_txtmask.Text = pessoaList[index].Telefone;
+            RG_txt.Text = pessoaList[index].RG;
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Menu a = new Menu();
+            a.ShowDialog();
         }
     }
 }

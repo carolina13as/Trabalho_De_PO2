@@ -11,3 +11,16 @@ C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Traba
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho_de_POO.Pessoa.resources
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho_de_POO.Menu.resources
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho_de_POO.Processo.resources
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\bin\Debug\Trabalho de POO.exe.config
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\bin\Debug\Trabalho de POO.exe
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\bin\Debug\Trabalho de POO.pdb
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.AssemblyReference.cache
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.SuggestedBindingRedirects.cache
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho_de_POO.Processo.resources
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho_de_POO.Menu.resources
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho_de_POO.Pessoa.resources
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho_de_POO.Properties.Resources.resources
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.GenerateResource.cache
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.CoreCompileInputs.cache
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho de POO.exe
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho de POO.pdb

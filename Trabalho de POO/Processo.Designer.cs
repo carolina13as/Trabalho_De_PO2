@@ -35,20 +35,20 @@
             this.lab_6 = new System.Windows.Forms.Label();
             this.lab_3 = new System.Windows.Forms.Label();
             this.lab_7 = new System.Windows.Forms.Label();
-            this.lab_4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.TextBox();
-            this.text_3 = new System.Windows.Forms.TextBox();
-            this.text_6 = new System.Windows.Forms.TextBox();
-            this.combo_4 = new System.Windows.Forms.ComboBox();
+            this.tx_numero = new System.Windows.Forms.TextBox();
+            this.tx_data = new System.Windows.Forms.TextBox();
+            this.tx_tipo = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tx_descricao = new System.Windows.Forms.TextBox();
+            this.tx_vara = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tx_pessoa = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +90,7 @@
             this.lab_6.AutoSize = true;
             this.lab_6.BackColor = System.Drawing.Color.Transparent;
             this.lab_6.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_6.Location = new System.Drawing.Point(459, 170);
+            this.lab_6.Location = new System.Drawing.Point(459, 124);
             this.lab_6.Name = "lab_6";
             this.lab_6.Size = new System.Drawing.Size(71, 37);
             this.lab_6.TabIndex = 3;
@@ -112,101 +112,70 @@
             this.lab_7.AutoSize = true;
             this.lab_7.BackColor = System.Drawing.Color.Transparent;
             this.lab_7.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_7.Location = new System.Drawing.Point(460, 231);
+            this.lab_7.Location = new System.Drawing.Point(460, 212);
             this.lab_7.Name = "lab_7";
             this.lab_7.Size = new System.Drawing.Size(70, 37);
             this.lab_7.TabIndex = 5;
             this.lab_7.Text = "Vara:";
             // 
-            // lab_4
+            // tx_numero
             // 
-            this.lab_4.AutoSize = true;
-            this.lab_4.BackColor = System.Drawing.Color.Transparent;
-            this.lab_4.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_4.Location = new System.Drawing.Point(447, 111);
-            this.lab_4.Name = "lab_4";
-            this.lab_4.Size = new System.Drawing.Size(87, 37);
-            this.lab_4.TabIndex = 6;
-            this.lab_4.Text = "Status:";
+            this.tx_numero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx_numero.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_numero.Location = new System.Drawing.Point(65, 130);
+            this.tx_numero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tx_numero.Name = "tx_numero";
+            this.tx_numero.Size = new System.Drawing.Size(60, 31);
+            this.tx_numero.TabIndex = 8;
             // 
-            // button1
+            // tx_data
             // 
-            this.button1.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 381);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 49);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Alterar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.tx_data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx_data.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_data.Location = new System.Drawing.Point(147, 307);
+            this.tx_data.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tx_data.Name = "tx_data";
+            this.tx_data.Size = new System.Drawing.Size(159, 31);
+            this.tx_data.TabIndex = 10;
             // 
-            // ID
+            // tx_tipo
             // 
-            this.ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ID.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.Location = new System.Drawing.Point(65, 130);
-            this.ID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(60, 31);
-            this.ID.TabIndex = 8;
-            // 
-            // text_3
-            // 
-            this.text_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.text_3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_3.Location = new System.Drawing.Point(147, 307);
-            this.text_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.text_3.Name = "text_3";
-            this.text_3.Size = new System.Drawing.Size(159, 31);
-            this.text_3.TabIndex = 10;
-            // 
-            // text_6
-            // 
-            this.text_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.text_6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.text_6.Location = new System.Drawing.Point(551, 176);
-            this.text_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.text_6.Name = "text_6";
-            this.text_6.Size = new System.Drawing.Size(199, 31);
-            this.text_6.TabIndex = 12;
-            // 
-            // combo_4
-            // 
-            this.combo_4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_4.FormattingEnabled = true;
-            this.combo_4.Location = new System.Drawing.Point(635, 388);
-            this.combo_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.combo_4.Name = "combo_4";
-            this.combo_4.Size = new System.Drawing.Size(246, 34);
-            this.combo_4.TabIndex = 15;
+            this.tx_tipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx_tipo.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_tipo.Location = new System.Drawing.Point(551, 124);
+            this.tx_tipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tx_tipo.Name = "tx_tipo";
+            this.tx_tipo.Size = new System.Drawing.Size(199, 31);
+            this.tx_tipo.TabIndex = 12;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(361, 380);
+            this.button2.Location = new System.Drawing.Point(379, 421);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 49);
             this.button2.TabIndex = 19;
             this.button2.Text = "Novo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(245, 381);
+            this.button3.Location = new System.Drawing.Point(245, 421);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 49);
             this.button3.TabIndex = 20;
             this.button3.Text = "Excluir";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(129, 381);
+            this.button4.Location = new System.Drawing.Point(19, 368);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 49);
@@ -215,40 +184,30 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox1
+            // tx_descricao
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(147, 212);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 31);
-            this.textBox1.TabIndex = 22;
+            this.tx_descricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx_descricao.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_descricao.Location = new System.Drawing.Point(147, 212);
+            this.tx_descricao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tx_descricao.Name = "tx_descricao";
+            this.tx_descricao.Size = new System.Drawing.Size(258, 31);
+            this.tx_descricao.TabIndex = 22;
             // 
-            // textBox2
+            // tx_vara
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(551, 233);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 31);
-            this.textBox2.TabIndex = 23;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(529, 111);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 31);
-            this.textBox3.TabIndex = 24;
+            this.tx_vara.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx_vara.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_vara.Location = new System.Drawing.Point(551, 212);
+            this.tx_vara.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tx_vara.Name = "tx_vara";
+            this.tx_vara.Size = new System.Drawing.Size(159, 31);
+            this.tx_vara.TabIndex = 23;
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(478, 380);
+            this.button5.Location = new System.Drawing.Point(513, 421);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(116, 49);
@@ -267,6 +226,51 @@
             this.dataGridView1.Size = new System.Drawing.Size(844, 236);
             this.dataGridView1.TabIndex = 26;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(434, 291);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 37);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Pessoa:";
+            // 
+            // tx_pessoa
+            // 
+            this.tx_pessoa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx_pessoa.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tx_pessoa.Location = new System.Drawing.Point(551, 293);
+            this.tx_pessoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tx_pessoa.Name = "tx_pessoa";
+            this.tx_pessoa.Size = new System.Drawing.Size(199, 31);
+            this.tx_pessoa.TabIndex = 28;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(650, 421);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(213, 49);
+            this.button6.TabIndex = 30;
+            this.button6.Text = "Voltar ao Menu";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(19, 421);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(186, 49);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Salvar Edição";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Processo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -275,20 +279,20 @@
             this.BackgroundImage = global::Trabalho_de_POO.Properties.Resources.imagem3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(893, 733);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.tx_pessoa);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tx_vara);
+            this.Controls.Add(this.tx_descricao);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.combo_4);
-            this.Controls.Add(this.text_6);
-            this.Controls.Add(this.text_3);
-            this.Controls.Add(this.ID);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lab_4);
+            this.Controls.Add(this.tx_tipo);
+            this.Controls.Add(this.tx_data);
+            this.Controls.Add(this.tx_numero);
             this.Controls.Add(this.lab_7);
             this.Controls.Add(this.lab_3);
             this.Controls.Add(this.lab_6);
@@ -314,20 +318,20 @@
         private System.Windows.Forms.Label lab_6;
         private System.Windows.Forms.Label lab_3;
         private System.Windows.Forms.Label lab_7;
-        private System.Windows.Forms.Label lab_4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox ID;
-        private System.Windows.Forms.TextBox text_3;
-        private System.Windows.Forms.TextBox text_6;
-        private System.Windows.Forms.ComboBox combo_4;
+        private System.Windows.Forms.TextBox tx_numero;
+        private System.Windows.Forms.TextBox tx_data;
+        private System.Windows.Forms.TextBox tx_tipo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tx_vara;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tx_pessoa;
+        private System.Windows.Forms.TextBox tx_descricao;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button1;
     }
 }
 

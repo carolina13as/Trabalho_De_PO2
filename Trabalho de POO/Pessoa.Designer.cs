@@ -41,7 +41,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.RG_txt = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -49,6 +48,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.CPF_txtmask = new System.Windows.Forms.MaskedTextBox();
             this.Telefone_txtmask = new System.Windows.Forms.MaskedTextBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,31 +175,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(851, 245);
             this.dataGridView1.TabIndex = 13;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(645, 445);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(259, 30);
-            this.comboBox1.TabIndex = 14;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 445);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 49);
+            this.button1.Size = new System.Drawing.Size(186, 49);
             this.button1.TabIndex = 15;
-            this.button1.Text = "Alterar";
+            this.button1.Text = "Salvar Edição";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(129, 445);
+            this.button4.Location = new System.Drawing.Point(12, 388);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 49);
@@ -264,6 +255,18 @@
             this.Telefone_txtmask.Size = new System.Drawing.Size(172, 31);
             this.Telefone_txtmask.TabIndex = 28;
             // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(705, 445);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(213, 49);
+            this.button6.TabIndex = 29;
+            this.button6.Text = "Voltar ao Menu";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Pessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -272,6 +275,7 @@
             this.BackgroundImage = global::Trabalho_de_POO.Properties.Resources.imagem3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(930, 805);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.Telefone_txtmask);
             this.Controls.Add(this.CPF_txtmask);
             this.Controls.Add(this.button5);
@@ -279,7 +283,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.RG_txt);
             this.Controls.Add(this.label7);
@@ -315,7 +318,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox RG_txt;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
@@ -323,5 +325,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.MaskedTextBox CPF_txtmask;
         private System.Windows.Forms.MaskedTextBox Telefone_txtmask;
+        private System.Windows.Forms.Button button6;
     }
 }
