@@ -16,7 +16,7 @@ namespace Trabalho_de_POO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Processo());
+            Application.Run(new Menu());
         }
     }
 }

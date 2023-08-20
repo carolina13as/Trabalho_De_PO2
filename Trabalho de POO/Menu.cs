@@ -19,8 +19,10 @@ namespace Trabalho_de_POO
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Processo a = new Processo();
             a.ShowDialog();
+            
         }
 
 
@@ -29,8 +31,10 @@ namespace Trabalho_de_POO
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Pessoa a = new Pessoa();
             a.ShowDialog();
+            
         }
 
     }

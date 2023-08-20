@@ -50,9 +50,9 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.button1.Font = new System.Drawing.Font("Sans Serif Collection", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(150, 187);
+            this.button1.Location = new System.Drawing.Point(198, 168);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(346, 81);
+            this.button1.Size = new System.Drawing.Size(372, 81);
             this.button1.TabIndex = 2;
             this.button1.Text = "Cadastro de Processos";
             this.button1.UseVisualStyleBackColor = false;
@@ -62,7 +62,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.button2.Font = new System.Drawing.Font("Sans Serif Collection", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(150, 413);
+            this.button2.Location = new System.Drawing.Point(210, 311);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(346, 87);
             this.button2.TabIndex = 3;
