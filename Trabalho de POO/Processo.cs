@@ -16,6 +16,7 @@ namespace Trabalho_de_POO
         public Processo()
         {
             InitializeComponent();
+            processoList = C_Processo.JsonDesserializarLista(@"Documentos:\json\arquivo.json");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -38,12 +39,16 @@ namespace Trabalho_de_POO
                 button6.Visible = false;
 
                 int index = dataGridView1.CurrentCell.RowIndex;
-                tx_vara.Text = processoList[index].Vara;
-                tx_numero.Text = processoList[index].Numero;
-                tx_descricao.Text = processoList[index].Descricao;
-                processoList[index].Pessoa = tx_pessoa.Text;
-                tx_data.Text = processoList[index].Data;
-                tx_tipo.Text = processoList[index].Tipo;
+                C_Processo a = processoList[index];
+
+                
+                tx_vara.Text = a.Vara;
+                tx_numero.Text = a.Numero;
+                tx_descricao.Text = a.Descricao;
+                tx_pessoa.Text = a.Pessoa;
+                tx_data.Text = a.Data;
+                tx_tipo.Text = a.Tipo;
+                dataGridView1.Enabled = false;
             }
             catch(Exception ex)
             {
@@ -56,6 +61,7 @@ namespace Trabalho_de_POO
         {
             try
             {
+
                 button4.Enabled = true;
                 button4.Visible = true;
 
@@ -77,7 +83,8 @@ namespace Trabalho_de_POO
             {
                 MessageBox.Show(ex.Message);
             }
-            
+            var c_processo = new C_Processo();
+            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -127,6 +134,9 @@ namespace Trabalho_de_POO
             {
                 MessageBox.Show($"Erro{ex.Message}");
             }
+
+            var c_processo = new C_Processo();
+            if (c_processo.JsonSerializarLista(processoList, @"Documentos:\json\arquivo.json")) ;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -134,13 +144,18 @@ namespace Trabalho_de_POO
             try
             {
             int index = dataGridView1.CurrentCell.RowIndex;
-            processoList[index].Vara = tx_vara.Text;
-            processoList[index].Numero = tx_numero.Text;
-            processoList[index].Descricao = tx_descricao.Text;
-            processoList[index].Pessoa = tx_pessoa.Text;
-            processoList[index].Data = tx_data.Text;
-            processoList[index].Tipo = tx_tipo.Text;
-            
+            string vara = tx_vara.Text;
+            string numero = tx_numero.Text;
+            string descricao = tx_descricao.Text;
+            string pessoa = tx_pessoa.Text;
+            string data = tx_data.Text;
+            string tipo = tx_tipo.Text;
+
+            C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
+            processoList.RemoveAt(index);
+            processoList.Insert(index, a);
+
+
             dataGridView1.DataSource = null;
             dataGridView1.Refresh();
             dataGridView1.DataSource = processoList;
@@ -163,6 +178,9 @@ namespace Trabalho_de_POO
             
             button6.Enabled = true;
             button6.Visible = true;
+
+            var c_processo = new C_Processo();
+            if (c_processo.JsonSerializarLista(processoList, @"Documentos:\json\arquivo.json")) ;
         }
     }
 }

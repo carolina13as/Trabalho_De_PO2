@@ -33,13 +33,19 @@ namespace Trabalho_de_POO
         {
             try
             {
+
+
                 int index = dataGridView1.CurrentCell.RowIndex;
-                pessoaList[index].Nome = Nome_txt.Text;
-                pessoaList[index].CPF = CPF_txtmask.Text;
-                pessoaList[index].Email = Email_txt.Text;
-                pessoaList[index].Endereco = Endereco_txt.Text;
-                pessoaList[index].Telefone = Telefone_txtmask.Text;
-                pessoaList[index].RG = RG_txt.Text;
+                string nome = Nome_txt.Text;
+                string email = Email_txt.Text;
+                string cpf = CPF_txtmask.Text;
+                string endereco = Endereco_txt.Text;
+                string telefone = Telefone_txtmask.Text;
+                string rg = RG_txt.Text;
+
+                C_Pessoa a = new C_Pessoa(nome, cpf, telefone, email, endereco, rg);
+                pessoaList.RemoveAt(index);
+                pessoaList.Insert(index,a);
 
                 dataGridView1.DataSource = null;
                 dataGridView1.Refresh();
@@ -93,6 +99,8 @@ namespace Trabalho_de_POO
             {
                 MessageBox.Show(ex.Message);
             }
+            var c_pessoa = new C_Pessoa();
+            if (c_pessoa.JsonSerializarLista(pessoaList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json")) ;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -132,13 +140,19 @@ namespace Trabalho_de_POO
                 button6.Enabled = false;
                 button6.Visible = false;
 
-                int index = dataGridView1.CurrentCell.RowIndex;
-                Nome_txt.Text = pessoaList[index].Nome;
-                CPF_txtmask.Text = pessoaList[index].CPF;
-                Email_txt.Text = pessoaList[index].Email;
-                Endereco_txt.Text = pessoaList[index].Endereco;
-                Telefone_txtmask.Text = pessoaList[index].Telefone;
-                RG_txt.Text = pessoaList[index].RG;
+                C_Pessoa p = new C_Pessoa();
+                p = pessoaList[dataGridView1.CurrentCell.RowIndex];
+                Nome_txt.Text = p.Nome;
+                CPF_txtmask.Text = p.CPF;
+                Telefone_txtmask.Text = p.Telefone;
+                Email_txt.Text = p.Email;
+                Endereco_txt.Text = p.Endereco;
+                RG_txt.Text = p.RG;
+
+                dataGridView1.Enabled = false;
+                dataGridView1.DataSource = null;
+                dataGridView1.Refresh();
+                dataGridView1.DataSource = pessoaList;
             }
             catch (Exception ex)
             {
