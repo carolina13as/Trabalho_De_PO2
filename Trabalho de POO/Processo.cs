@@ -13,10 +13,26 @@ namespace Trabalho_de_POO
     public partial class Processo : Form
     {
         public List<C_Processo> processoList = new List<C_Processo>();
+
         public Processo()
         {
             InitializeComponent();
-            processoList = C_Processo.JsonDesserializarLista(@"Documentos:\json\arquivo.json");
+            try
+            {
+                processoList = C_Processo.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json");
+            }
+            catch(Exception ex)
+            {
+
+            }
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = processoList;
+
+            if (processoList.Count > 0)
+            {
+                button4.Enabled = true;
+                button4.Visible = true;
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -61,9 +77,7 @@ namespace Trabalho_de_POO
         {
             try
             {
-
-                button4.Enabled = true;
-                button4.Visible = true;
+                
 
                 string numero = tx_numero.Text;
                 string descricao = tx_descricao.Text;
@@ -71,20 +85,34 @@ namespace Trabalho_de_POO
                 string vara = tx_vara.Text;
                 string tipo = tx_tipo.Text;
                 string pessoa = tx_pessoa.Text;
+                if (numero != "" && descricao != "" && data != "" && vara != "" && tipo != "" && pessoa != "")
+                {
+                    C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
+                    processoList.Add(a);
 
-                C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
-                processoList.Add(a);
+                    dataGridView1.DataSource = null;
+                    dataGridView1.Refresh();
+                    dataGridView1.DataSource = processoList;
 
-                dataGridView1.DataSource = null;
-                dataGridView1.Refresh();
-                dataGridView1.DataSource = processoList;
+                    button4.Enabled = true;
+                    button4.Visible = true;
+
+                    var c_processo = a;
+                    if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+
+                    label3.Text = "";
+                }
+                else
+                {
+                    label3.Text = "Falta informações";
+                }
+                
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            var c_processo = new C_Processo();
-            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+            
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -130,13 +158,23 @@ namespace Trabalho_de_POO
                 dataGridView1.Refresh();
                 dataGridView1.DataSource = processoList;
             }
+            catch(NullReferenceException ex)
+            {
+                MessageBox.Show($"Erro{ex.Message}");
+            }
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro{ex.Message}");
             }
 
             var c_processo = new C_Processo();
-            if (c_processo.JsonSerializarLista(processoList, @"Documentos:\json\arquivo.json")) ;
+            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+
+            if (processoList.Count == 0)
+            {
+                button4.Enabled = false;
+                button4.Visible = false;
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -180,7 +218,15 @@ namespace Trabalho_de_POO
             button6.Visible = true;
 
             var c_processo = new C_Processo();
-            if (c_processo.JsonSerializarLista(processoList, @"Documentos:\json\arquivo.json")) ;
+            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //processoList = C_Processo.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json");
+
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = processoList;
         }
     }
 }

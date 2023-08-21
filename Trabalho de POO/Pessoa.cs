@@ -17,6 +17,17 @@ namespace Trabalho_de_POO
         public Pessoa()
         {
             InitializeComponent();
+
+            pessoaList = C_Pessoa.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json");
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = pessoaList;
+
+            if(pessoaList.Count > 0)
+            {
+                button4.Enabled = true;
+                button4.Visible = true;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -87,13 +98,22 @@ namespace Trabalho_de_POO
                 string endereco = Endereco_txt.Text;
                 string telefone = Telefone_txtmask.Text;
                 string rg = RG_txt.Text;
+                if (nome != "" && cpf != "" && telefone != "" && email != "" && endereco != "" && rg != "")
+                {
+                    C_Pessoa a = new C_Pessoa(nome, cpf, telefone, email, endereco, rg);
+                    pessoaList.Add(a);
 
-                C_Pessoa a = new C_Pessoa(nome, cpf, telefone, email, endereco, rg);
-                pessoaList.Add(a);
+                    dataGridView1.DataSource = null;
+                    dataGridView1.Refresh();
+                    dataGridView1.DataSource = pessoaList;
 
-                dataGridView1.DataSource = null;
-                dataGridView1.Refresh();
-                dataGridView1.DataSource = pessoaList;
+                    label3.Text = "";
+                }
+                else
+                {
+                    label8.Text = "Falta informações";
+                }
+                
             }
             catch (Exception ex)
             {
@@ -117,6 +137,11 @@ namespace Trabalho_de_POO
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            if (pessoaList.Count == 0)
+            {
+                button4.Enabled = false;
+                button4.Visible = false;
             }
         }
 
@@ -164,6 +189,14 @@ namespace Trabalho_de_POO
         {
             Menu a = new Menu();
             a.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //pessoaList = C_Pessoa.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json");
+
+            //dataGridView1.DataSource = null;
+            //dataGridView1.DataSource = pessoaList;
         }
     }
 }
