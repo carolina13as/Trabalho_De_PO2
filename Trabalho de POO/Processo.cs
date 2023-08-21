@@ -151,12 +151,20 @@ namespace Trabalho_de_POO
         {
             try
             {
-                int index = dataGridView1.CurrentCell.RowIndex;
-                processoList.RemoveAt(index);
+                if (processoList.Count > 0)
+                {
+                    int index = dataGridView1.CurrentCell.RowIndex;
+                    processoList.RemoveAt(index);
 
-                dataGridView1.DataSource = null;
-                dataGridView1.Refresh();
-                dataGridView1.DataSource = processoList;
+                    dataGridView1.DataSource = null;
+                    dataGridView1.Refresh();
+                    dataGridView1.DataSource = processoList;
+                }
+                else
+                {
+                    MessageBox.Show("A lista já está vazia");
+                }
+                
             }
             catch(NullReferenceException ex)
             {

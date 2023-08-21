@@ -127,12 +127,17 @@ namespace Trabalho_de_POO
         {
             try
             {
-                int index = dataGridView1.CurrentCell.RowIndex;
-                pessoaList.RemoveAt(index);
+                if (pessoaList.Count>0)
+                {
+                    int index = dataGridView1.CurrentCell.RowIndex;
+                    pessoaList.RemoveAt(index);
 
-                dataGridView1.DataSource = null;
-                dataGridView1.Refresh();
-                dataGridView1.DataSource = pessoaList;
+                    dataGridView1.DataSource = null;
+                    dataGridView1.Refresh();
+                    dataGridView1.DataSource = pessoaList;
+                }
+                else { MessageBox.Show("Lista já está vazia"); }
+                
             }
             catch (Exception ex)
             {
