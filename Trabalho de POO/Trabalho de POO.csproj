@@ -72,6 +72,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidarCPF.cs" />
     <EmbeddedResource Include="Processo.resx">
       <DependentUpon>Processo.cs</DependentUpon>
     </EmbeddedResource>

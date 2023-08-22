@@ -36,7 +36,6 @@
             this.lab_3 = new System.Windows.Forms.Label();
             this.lab_7 = new System.Windows.Forms.Label();
             this.tx_numero = new System.Windows.Forms.TextBox();
-            this.tx_data = new System.Windows.Forms.TextBox();
             this.tx_tipo = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,10 +45,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.tx_pessoa = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.data_txtmask = new System.Windows.Forms.MaskedTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,16 +128,6 @@
             this.tx_numero.Name = "tx_numero";
             this.tx_numero.Size = new System.Drawing.Size(60, 31);
             this.tx_numero.TabIndex = 8;
-            // 
-            // tx_data
-            // 
-            this.tx_data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tx_data.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_data.Location = new System.Drawing.Point(147, 307);
-            this.tx_data.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tx_data.Name = "tx_data";
-            this.tx_data.Size = new System.Drawing.Size(159, 31);
-            this.tx_data.TabIndex = 10;
             // 
             // tx_tipo
             // 
@@ -240,16 +230,6 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "Pessoa:";
             // 
-            // tx_pessoa
-            // 
-            this.tx_pessoa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tx_pessoa.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tx_pessoa.Location = new System.Drawing.Point(551, 293);
-            this.tx_pessoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tx_pessoa.Name = "tx_pessoa";
-            this.tx_pessoa.Size = new System.Drawing.Size(199, 31);
-            this.tx_pessoa.TabIndex = 28;
-            // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -287,6 +267,24 @@
             this.label3.Size = new System.Drawing.Size(0, 32);
             this.label3.TabIndex = 32;
             // 
+            // data_txtmask
+            // 
+            this.data_txtmask.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.data_txtmask.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.data_txtmask.Location = new System.Drawing.Point(162, 305);
+            this.data_txtmask.Mask = "00/00/0000";
+            this.data_txtmask.Name = "data_txtmask";
+            this.data_txtmask.Size = new System.Drawing.Size(172, 31);
+            this.data_txtmask.TabIndex = 33;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(542, 299);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(240, 24);
+            this.comboBox1.TabIndex = 34;
+            // 
             // Processo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -295,10 +293,11 @@
             this.BackgroundImage = global::Trabalho_de_POO.Properties.Resources.imagem3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(893, 733);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.data_txtmask);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.tx_pessoa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
@@ -308,7 +307,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.tx_tipo);
-            this.Controls.Add(this.tx_data);
             this.Controls.Add(this.tx_numero);
             this.Controls.Add(this.lab_7);
             this.Controls.Add(this.lab_3);
@@ -336,7 +334,6 @@
         private System.Windows.Forms.Label lab_3;
         private System.Windows.Forms.Label lab_7;
         private System.Windows.Forms.TextBox tx_numero;
-        private System.Windows.Forms.TextBox tx_data;
         private System.Windows.Forms.TextBox tx_tipo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -345,11 +342,12 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tx_pessoa;
         private System.Windows.Forms.TextBox tx_descricao;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox data_txtmask;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

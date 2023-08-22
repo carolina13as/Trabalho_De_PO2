@@ -1,25 +1,41 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Trabalho_de_POO
 {
     public partial class Processo : Form
     {
         public List<C_Processo> processoList = new List<C_Processo>();
+        public List<C_Pessoa> pessoaList = new List<C_Pessoa>();
+        
 
+
+        
         public Processo()
         {
             InitializeComponent();
+            
+            pessoaList = C_Pessoa.JsonDesserializarLista(@"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\CastroPessoa.json");
+            foreach (var pessoa in pessoaList)
+            {
+                comboBox1.Items.Add(pessoa.Nome);
+
+            }
             try
             {
-                processoList = C_Processo.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json");
+                processoList = C_Processo.JsonDesserializarLista(@"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json");
             }
             catch(Exception ex)
             {
@@ -61,8 +77,8 @@ namespace Trabalho_de_POO
                 tx_vara.Text = a.Vara;
                 tx_numero.Text = a.Numero;
                 tx_descricao.Text = a.Descricao;
-                tx_pessoa.Text = a.Pessoa;
-                tx_data.Text = a.Data;
+                comboBox1.Text = a.Pessoa;
+                data_txtmask.Text = a.Data;
                 tx_tipo.Text = a.Tipo;
                 dataGridView1.Enabled = false;
             }
@@ -81,10 +97,11 @@ namespace Trabalho_de_POO
 
                 string numero = tx_numero.Text;
                 string descricao = tx_descricao.Text;
-                string data = tx_data.Text;
+                string data = data_txtmask.Text;
                 string vara = tx_vara.Text;
                 string tipo = tx_tipo.Text;
-                string pessoa = tx_pessoa.Text;
+                string pessoa = comboBox1.Text;
+                
                 if (numero != "" && descricao != "" && data != "" && vara != "" && tipo != "" && pessoa != "")
                 {
                     C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
@@ -98,9 +115,10 @@ namespace Trabalho_de_POO
                     button4.Visible = true;
 
                     var c_processo = a;
-                    if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
-
-                    label3.Text = "";
+                    if (c_processo.JsonSerializarLista(processoList, @"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json")) ;
+                    {
+                        label3.Text = "";
+                    }
                 }
                 else
                 {
@@ -133,10 +151,10 @@ namespace Trabalho_de_POO
         {
             try
             {
-                tx_data.Text = string.Empty;
+                data_txtmask.Text = string.Empty;
                 tx_descricao.Text = string.Empty;
                 tx_numero.Text = string.Empty;
-                tx_pessoa.Text = string.Empty;
+                comboBox1.Text = string.Empty;
                 tx_tipo.Text = string.Empty;
                 tx_vara.Text = string.Empty;
             }
@@ -176,7 +194,7 @@ namespace Trabalho_de_POO
             }
 
             var c_processo = new C_Processo();
-            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json")) ;
 
             if (processoList.Count == 0)
             {
@@ -193,8 +211,8 @@ namespace Trabalho_de_POO
             string vara = tx_vara.Text;
             string numero = tx_numero.Text;
             string descricao = tx_descricao.Text;
-            string pessoa = tx_pessoa.Text;
-            string data = tx_data.Text;
+            string pessoa = comboBox1.Text;
+            string data = data_txtmask.Text;
             string tipo = tx_tipo.Text;
 
             C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
@@ -224,9 +242,9 @@ namespace Trabalho_de_POO
             
             button6.Enabled = true;
             button6.Visible = true;
-
+            dataGridView1.Enabled = true;
             var c_processo = new C_Processo();
-            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json")) ;
         }
 
         private void button7_Click(object sender, EventArgs e)

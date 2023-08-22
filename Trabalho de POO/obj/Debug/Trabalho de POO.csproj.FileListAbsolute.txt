@@ -27,3 +27,6 @@ C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Tr
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\bin\Debug\Newtonsoft.Json.dll
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\bin\Debug\Newtonsoft.Json.xml
 C:\Users\carol\OneDrive\Documentos\ifro\tarefas do 2º\Po2\Trabalho de POO\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.CopyComplete
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Trabalho_De_PO2\Trabalho de POO\obj\Debug\Trabalho de POO.csproj.CopyComplete
