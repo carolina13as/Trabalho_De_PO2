@@ -37,19 +37,19 @@
             this.lab_7 = new System.Windows.Forms.Label();
             this.tx_numero = new System.Windows.Forms.TextBox();
             this.tx_tipo = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_novo = new System.Windows.Forms.Button();
+            this.button_excluir = new System.Windows.Forms.Button();
+            this.button_editar = new System.Windows.Forms.Button();
             this.tx_descricao = new System.Windows.Forms.TextBox();
             this.tx_vara = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.button_salvar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_menu = new System.Windows.Forms.Button();
+            this.button_salvaredit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.data_txtmask = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_Pessoa = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,12 +122,14 @@
             // tx_numero
             // 
             this.tx_numero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tx_numero.Enabled = false;
             this.tx_numero.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tx_numero.Location = new System.Drawing.Point(65, 130);
             this.tx_numero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tx_numero.Name = "tx_numero";
             this.tx_numero.Size = new System.Drawing.Size(60, 31);
             this.tx_numero.TabIndex = 8;
+            this.tx_numero.Text = "1";
             // 
             // tx_tipo
             // 
@@ -139,43 +141,43 @@
             this.tx_tipo.Size = new System.Drawing.Size(199, 31);
             this.tx_tipo.TabIndex = 12;
             // 
-            // button2
+            // button_novo
             // 
-            this.button2.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(379, 421);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 49);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Novo";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_novo.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_novo.Location = new System.Drawing.Point(379, 421);
+            this.button_novo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_novo.Name = "button_novo";
+            this.button_novo.Size = new System.Drawing.Size(111, 49);
+            this.button_novo.TabIndex = 19;
+            this.button_novo.Text = "Novo";
+            this.button_novo.UseVisualStyleBackColor = true;
+            this.button_novo.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button_excluir
             // 
-            this.button3.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(245, 421);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 49);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Excluir";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button_excluir.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_excluir.Location = new System.Drawing.Point(245, 421);
+            this.button_excluir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_excluir.Name = "button_excluir";
+            this.button_excluir.Size = new System.Drawing.Size(110, 49);
+            this.button_excluir.TabIndex = 20;
+            this.button_excluir.Text = "Excluir";
+            this.button_excluir.UseVisualStyleBackColor = true;
+            this.button_excluir.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // button_editar
             // 
-            this.button4.Enabled = false;
-            this.button4.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(19, 368);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 49);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Editar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button_editar.Enabled = false;
+            this.button_editar.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_editar.Location = new System.Drawing.Point(19, 368);
+            this.button_editar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_editar.Name = "button_editar";
+            this.button_editar.Size = new System.Drawing.Size(110, 49);
+            this.button_editar.TabIndex = 21;
+            this.button_editar.Text = "Editar";
+            this.button_editar.UseVisualStyleBackColor = true;
+            this.button_editar.Visible = false;
+            this.button_editar.Click += new System.EventHandler(this.button4_Click);
             // 
             // tx_descricao
             // 
@@ -197,17 +199,17 @@
             this.tx_vara.Size = new System.Drawing.Size(159, 31);
             this.tx_vara.TabIndex = 23;
             // 
-            // button5
+            // button_salvar
             // 
-            this.button5.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(513, 421);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 49);
-            this.button5.TabIndex = 25;
-            this.button5.Text = "Salvar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button_salvar.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_salvar.Location = new System.Drawing.Point(513, 421);
+            this.button_salvar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_salvar.Name = "button_salvar";
+            this.button_salvar.Size = new System.Drawing.Size(116, 49);
+            this.button_salvar.TabIndex = 25;
+            this.button_salvar.Text = "Salvar";
+            this.button_salvar.UseVisualStyleBackColor = true;
+            this.button_salvar.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridView1
             // 
@@ -230,31 +232,31 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "Pessoa:";
             // 
-            // button6
+            // button_menu
             // 
-            this.button6.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(650, 421);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(213, 49);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "Voltar ao Menu";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button_menu.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_menu.Location = new System.Drawing.Point(650, 421);
+            this.button_menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_menu.Name = "button_menu";
+            this.button_menu.Size = new System.Drawing.Size(213, 49);
+            this.button_menu.TabIndex = 30;
+            this.button_menu.Text = "Voltar ao Menu";
+            this.button_menu.UseVisualStyleBackColor = true;
+            this.button_menu.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button1
+            // button_salvaredit
             // 
-            this.button1.Enabled = false;
-            this.button1.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(19, 421);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 49);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Salvar Edição";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button_salvaredit.Enabled = false;
+            this.button_salvaredit.Font = new System.Drawing.Font("Sans Serif Collection", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_salvaredit.Location = new System.Drawing.Point(19, 421);
+            this.button_salvaredit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button_salvaredit.Name = "button_salvaredit";
+            this.button_salvaredit.Size = new System.Drawing.Size(186, 49);
+            this.button_salvaredit.TabIndex = 31;
+            this.button_salvaredit.Text = "Salvar Edição";
+            this.button_salvaredit.UseVisualStyleBackColor = true;
+            this.button_salvaredit.Visible = false;
+            this.button_salvaredit.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label3
             // 
@@ -277,13 +279,14 @@
             this.data_txtmask.Size = new System.Drawing.Size(172, 31);
             this.data_txtmask.TabIndex = 33;
             // 
-            // comboBox1
+            // comboBox_Pessoa
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(542, 299);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(240, 24);
-            this.comboBox1.TabIndex = 34;
+            this.comboBox_Pessoa.FormattingEnabled = true;
+            this.comboBox_Pessoa.Location = new System.Drawing.Point(542, 299);
+            this.comboBox_Pessoa.Name = "comboBox_Pessoa";
+            this.comboBox_Pessoa.Size = new System.Drawing.Size(240, 24);
+            this.comboBox_Pessoa.TabIndex = 34;
+            this.comboBox_Pessoa.SelectedIndexChanged += new System.EventHandler(this.comboBox_Pessoa_SelectedIndexChanged);
             // 
             // Processo
             // 
@@ -293,19 +296,19 @@
             this.BackgroundImage = global::Trabalho_de_POO.Properties.Resources.imagem3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(893, 733);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBox_Pessoa);
             this.Controls.Add(this.data_txtmask);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button_salvaredit);
+            this.Controls.Add(this.button_menu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button_salvar);
             this.Controls.Add(this.tx_vara);
             this.Controls.Add(this.tx_descricao);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_editar);
+            this.Controls.Add(this.button_excluir);
+            this.Controls.Add(this.button_novo);
             this.Controls.Add(this.tx_tipo);
             this.Controls.Add(this.tx_numero);
             this.Controls.Add(this.lab_7);
@@ -335,19 +338,19 @@
         private System.Windows.Forms.Label lab_7;
         private System.Windows.Forms.TextBox tx_numero;
         private System.Windows.Forms.TextBox tx_tipo;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_novo;
+        private System.Windows.Forms.Button button_excluir;
+        private System.Windows.Forms.Button button_editar;
         private System.Windows.Forms.TextBox tx_vara;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button_salvar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tx_descricao;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_menu;
+        private System.Windows.Forms.Button button_salvaredit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MaskedTextBox data_txtmask;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox_Pessoa;
     }
 }
 

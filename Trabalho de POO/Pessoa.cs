@@ -21,15 +21,15 @@ namespace Trabalho_de_POO
             InitializeComponent();
             try
             {
-                pessoaList = C_Pessoa.JsonDesserializarLista(@"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\CastroPessoa.json");
+                pessoaList = C_Pessoa.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json");
 
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = pessoaList;
 
                 if (pessoaList.Count > 0)
                 {
-                    button4.Enabled = true;
-                    button4.Visible = true;
+                    button_editar.Enabled = true;
+                    button_editar.Visible = true;
                 }
             } catch (Exception ex)
             { 
@@ -54,11 +54,11 @@ namespace Trabalho_de_POO
 
                 if (ValidarCPF.ValidaCPF(CPF_txtmask.Text) == false)
                 {
-                    label9.Text = "CPF inválido, insira outro novamente";
+                    txt_cpf_invalido.Text = "CPF inválido, insira outro novamente";
                 }
                 else
                 {
-                    label9.Text = "";
+                    txt_cpf_invalido.Text = "";
                     int index = dataGridView1.CurrentCell.RowIndex;
                     string nome = Nome_txt.Text;
                     string email = Email_txt.Text;
@@ -67,29 +67,62 @@ namespace Trabalho_de_POO
                     string telefone = Telefone_txtmask.Text;
                     string rg = RG_txt.Text;
 
-                    C_Pessoa a = new C_Pessoa(nome, cpf, telefone, email, endereco, rg);
-                    pessoaList.RemoveAt(index);
-                    pessoaList.Insert(index, a);
 
-                    dataGridView1.DataSource = null;
-                    dataGridView1.Refresh();
-                    dataGridView1.DataSource = pessoaList;
 
-                    button1.Enabled = false;
-                    button1.Visible = false;
+                    if (nome != "" && cpf != "" && telefone != "" && email != "" && endereco != "" && rg != "")
+                    {
+                        txt_falta_Info.Text = "";
+                        if (ValidarCPF.ValidaCPF(CPF_txtmask.Text) == false)
+                        {
+                            txt_cpf_invalido.Text = "CPF inválido, insira outro novamente";
+                        }
+                        else
+                        {
+                            C_Pessoa a = pessoaList[index];
+                            bool verificacao = ValidarCPF.CPF_existente_Editar(cpf, pessoaList,a.CPF);
 
-                    button2.Enabled = true;
-                    button2.Visible = true;
+                            if (verificacao)
+                            {
+                                a = new C_Pessoa(nome, cpf, telefone, email, endereco, rg);
+                                pessoaList.RemoveAt(index);
+                                pessoaList.Insert(index, a);
 
-                    button3.Enabled = true;
-                    button3.Visible = true;
+                                dataGridView1.DataSource = null;
+                                dataGridView1.Refresh();
+                                dataGridView1.DataSource = pessoaList;
 
-                    button5.Enabled = true;
-                    button5.Visible = true;
+                                txt_falta_Info.Text = "";
+                                button_editar.Enabled = true;
+                                button_editar.Visible = true;
 
-                    button6.Enabled = true;
-                    button6.Visible = true;
-                    dataGridView1.Enabled = true;
+                                button_salvaredit.Enabled = false;
+                                button_salvaredit.Visible = false;
+
+                                button_novo.Enabled = true;
+                                button_novo.Visible = true;
+
+                                button_excluir.Enabled = true;
+                                button_excluir.Visible = true;
+
+                                button_salvar.Enabled = true;
+                                button_salvar.Visible = true;
+
+                                button_menu.Enabled = true;
+                                button_menu.Visible = true;
+                                dataGridView1.Enabled = true;
+                            }
+                            else
+                            {
+                                txt_cpf_invalido.Text = "CPF já foi cadastrado";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        txt_falta_Info.Text = "Falta informações";
+                    }
+                    
+                    
                 }
             }
             catch (Exception ex)
@@ -102,68 +135,59 @@ namespace Trabalho_de_POO
         {
             try
             {
-                if (ValidarCPF.ValidaCPF(CPF_txtmask.Text) == false)
-                {
-                    label9.Text = "CPF inválido, insira outro novamente";
-                }
-                else
-                {
-                    
-                    label9.Text = "";
-                    button4.Enabled = true;
-                    button4.Visible = true;
+
+                txt_cpf_invalido.Text = "";
+                
+                string nome = Nome_txt.Text;
+                string email = Email_txt.Text;
+                string cpf = CPF_txtmask.Text;
+                string endereco = Endereco_txt.Text;
+                string telefone = Telefone_txtmask.Text;
+                string rg = RG_txt.Text;
 
 
-                    string nome = Nome_txt.Text;
-                    string email = Email_txt.Text;
-                    string cpf = CPF_txtmask.Text;
-                    string endereco = Endereco_txt.Text;
-                    string telefone = Telefone_txtmask.Text;
-                    string rg = RG_txt.Text;
-                        
-                    foreach (var pessoa in pessoaList)
+                if (nome != "" && cpf != "" && telefone != "" && email != "" && endereco != "" && rg != "")
+                {
+                    txt_falta_Info.Text = "";
+                    if (ValidarCPF.ValidaCPF(CPF_txtmask.Text) == false)
                     {
-                        if(pessoa.CPF != cpf)
+                        txt_cpf_invalido.Text = "CPF inválido, insira outro novamente";
+                    }
+                    else
+                    {
+                        bool verificacao = ValidarCPF.CPF_existente(cpf,pessoaList);
+                        
+                        if (verificacao)
                         {
-                            if (nome != "" && cpf != "" && telefone != "" && email != "" && endereco != "" && rg != "")
-                            {
-                                C_Pessoa a = new C_Pessoa(nome, cpf, telefone, email, endereco, rg);
-                                pessoaList.Add(a);
+                            C_Pessoa a = new C_Pessoa(nome, cpf, telefone, email, endereco, rg);
+                            pessoaList.Add(a);
 
-                                dataGridView1.DataSource = null;
-                                dataGridView1.Refresh();
-                                dataGridView1.DataSource = pessoaList;
+                            dataGridView1.DataSource = null;
+                            dataGridView1.Refresh();
+                            dataGridView1.DataSource = pessoaList;
 
-                                label3.Text = "";
-                                label8.Text = "";
-                            }
-                            else
-                            {
-                                label8.Text = "Falta informações";
-                            }
+                            txt_falta_Info.Text = "";
+                            button_editar.Enabled = true;
+                            button_editar.Visible = true;
                         }
                         else
                         {
-                            label9.Text = "CPF já está sendo usado";
+                            txt_cpf_invalido.Text = "CPF já foi cadastrado";
                         }
-
                     }
-
-
-                    
-
-                    
-                    
-                   
-
                 }
+                else
+                {
+                    txt_falta_Info.Text = "Falta informações";
+                }
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             var c_pessoa = new C_Pessoa();
-            if (c_pessoa.JsonSerializarLista(pessoaList, @"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\CastroPessoa.json"));
+            if (c_pessoa.JsonSerializarLista(pessoaList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json"));
             
 
         }
@@ -180,6 +204,9 @@ namespace Trabalho_de_POO
                     dataGridView1.DataSource = null;
                     dataGridView1.Refresh();
                     dataGridView1.DataSource = pessoaList;
+
+                    var c_pessoa = new C_Pessoa();
+                    if (c_pessoa.JsonSerializarLista(pessoaList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json")) ;
                 }
                 else { MessageBox.Show("Lista já está vazia"); }
                 
@@ -190,8 +217,8 @@ namespace Trabalho_de_POO
             }
             if (pessoaList.Count == 0)
             {
-                button4.Enabled = false;
-                button4.Visible = false;
+                button_editar.Enabled = false;
+                button_editar.Visible = false;
             }
         }
 
@@ -200,20 +227,20 @@ namespace Trabalho_de_POO
         {
             try
             {
-                button1.Enabled = true;
-                button1.Visible = true;
+                button_salvaredit.Enabled = true;
+                button_salvaredit.Visible = true;
 
-                button2.Enabled = false;
-                button2.Visible = false;
+                button_novo.Enabled = false;
+                button_novo.Visible = false;
 
-                button3.Enabled = false;
-                button3.Visible = false;
+                button_excluir.Enabled = false;
+                button_excluir.Visible = false;
 
-                button5.Enabled = false;
-                button5.Visible = false;
+                button_salvar.Enabled = false;
+                button_salvar.Visible = false;
 
-                button6.Enabled = false;
-                button6.Visible = false;
+                button_menu.Enabled = false;
+                button_menu.Visible = false;
 
                 C_Pessoa p = new C_Pessoa();
                 p = pessoaList[dataGridView1.CurrentCell.RowIndex];

@@ -52,6 +52,8 @@
     <Compile Include="Entidades\C_Login.cs" />
     <Compile Include="Entidades\C_Pessoa.cs" />
     <Compile Include="Entidades\C_Processo.cs" />
+    <Compile Include="Entidades\N_Processo.cs" />
+    <Compile Include="Entidades\Verificar_Cliente.cs" />
     <Compile Include="Processo.cs">
       <SubType>Form</SubType>
     </Compile>

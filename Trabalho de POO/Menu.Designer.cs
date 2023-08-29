@@ -49,6 +49,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.Enabled = false;
             this.button1.Font = new System.Drawing.Font("Sans Serif Collection", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(198, 168);
             this.button1.Name = "button1";
@@ -83,6 +84,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

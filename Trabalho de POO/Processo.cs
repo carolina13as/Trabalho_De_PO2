@@ -27,48 +27,55 @@ namespace Trabalho_de_POO
         {
             InitializeComponent();
             
-            pessoaList = C_Pessoa.JsonDesserializarLista(@"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\CastroPessoa.json");
-            foreach (var pessoa in pessoaList)
-            {
-                comboBox1.Items.Add(pessoa.Nome);
-
-            }
+            
             try
             {
-                processoList = C_Processo.JsonDesserializarLista(@"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json");
+                pessoaList = C_Pessoa.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json");
+                foreach (var pessoa in pessoaList)
+                {
+                    comboBox_Pessoa.Items.Add(pessoa.CPF);
+                }
+
+                processoList = C_Processo.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json");
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = processoList;
+                if (processoList.Count > 0)
+                {
+                    button_editar.Enabled = true;
+                    button_editar.Visible = true;
+                }
+
+                tx_numero.Text = N_Processo.Pro(processoList);
+                if(processoList == null)
+                {
+                    tx_numero.Text = "1";
+                }
             }
             catch(Exception ex)
             {
 
             }
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = processoList;
-
-            if (processoList.Count > 0)
-            {
-                button4.Enabled = true;
-                button4.Visible = true;
-            }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             try
             {
-                button1.Enabled = true;
-                button1.Visible = true;
+                button_salvaredit.Enabled = true;
+                button_salvaredit.Visible = true;
 
-                button2.Enabled = false;
-                button2.Visible = false;
+                button_novo.Enabled = false;
+                button_novo.Visible = false;
 
-                button3.Enabled = false;
-                button3.Visible = false;
+                button_excluir.Enabled = false;
+                button_excluir.Visible = false;
 
-                button5.Enabled = false;
-                button5.Visible = false;
+                button_salvar.Enabled = false;
+                button_salvar.Visible = false;
 
-                button6.Enabled = false;
-                button6.Visible = false;
+                button_menu.Enabled = false;
+                button_menu.Visible = false;
 
                 int index = dataGridView1.CurrentCell.RowIndex;
                 C_Processo a = processoList[index];
@@ -77,7 +84,7 @@ namespace Trabalho_de_POO
                 tx_vara.Text = a.Vara;
                 tx_numero.Text = a.Numero;
                 tx_descricao.Text = a.Descricao;
-                comboBox1.Text = a.Pessoa;
+                comboBox_Pessoa.Text = a.Pessoa;
                 data_txtmask.Text = a.Data;
                 tx_tipo.Text = a.Tipo;
                 dataGridView1.Enabled = false;
@@ -94,30 +101,37 @@ namespace Trabalho_de_POO
             try
             {
                 
-
                 string numero = tx_numero.Text;
                 string descricao = tx_descricao.Text;
                 string data = data_txtmask.Text;
                 string vara = tx_vara.Text;
                 string tipo = tx_tipo.Text;
-                string pessoa = comboBox1.Text;
+                string pessoa = comboBox_Pessoa.Text;
                 
                 if (numero != "" && descricao != "" && data != "" && vara != "" && tipo != "" && pessoa != "")
                 {
-                    C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
-                    processoList.Add(a);
-
-                    dataGridView1.DataSource = null;
-                    dataGridView1.Refresh();
-                    dataGridView1.DataSource = processoList;
-
-                    button4.Enabled = true;
-                    button4.Visible = true;
-
-                    var c_processo = a;
-                    if (c_processo.JsonSerializarLista(processoList, @"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json")) ;
+                    if(Verificar_Cliente.Cliente_Valido(pessoa, pessoaList))
                     {
-                        label3.Text = "";
+                        C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
+                        processoList.Add(a);
+
+                        dataGridView1.DataSource = null;
+                        dataGridView1.Refresh();
+                        dataGridView1.DataSource = processoList;
+
+                        button_editar.Enabled = true;
+                        button_editar.Visible = true;
+
+                        var c_processo = a;
+                        if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+                        {
+                            label3.Text = "";
+                        }
+                        tx_numero.Text = N_Processo.Pro(processoList);
+                    }
+                    else
+                    {
+                        label3.Text = "Cliente não cadastrado";
                     }
                 }
                 else
@@ -154,7 +168,7 @@ namespace Trabalho_de_POO
                 data_txtmask.Text = string.Empty;
                 tx_descricao.Text = string.Empty;
                 tx_numero.Text = string.Empty;
-                comboBox1.Text = string.Empty;
+                comboBox_Pessoa.Text = string.Empty;
                 tx_tipo.Text = string.Empty;
                 tx_vara.Text = string.Empty;
             }
@@ -177,6 +191,7 @@ namespace Trabalho_de_POO
                     dataGridView1.DataSource = null;
                     dataGridView1.Refresh();
                     dataGridView1.DataSource = processoList;
+                    tx_numero.Text = N_Processo.Pro(processoList);
                 }
                 else
                 {
@@ -194,12 +209,12 @@ namespace Trabalho_de_POO
             }
 
             var c_processo = new C_Processo();
-            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json")) ;
+            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
 
             if (processoList.Count == 0)
             {
-                button4.Enabled = false;
-                button4.Visible = false;
+                button_editar.Enabled = false;
+                button_editar.Visible = false;
             }
         }
 
@@ -207,44 +222,53 @@ namespace Trabalho_de_POO
         {
             try
             {
-            int index = dataGridView1.CurrentCell.RowIndex;
-            string vara = tx_vara.Text;
-            string numero = tx_numero.Text;
-            string descricao = tx_descricao.Text;
-            string pessoa = comboBox1.Text;
-            string data = data_txtmask.Text;
-            string tipo = tx_tipo.Text;
+                int index = dataGridView1.CurrentCell.RowIndex;
+                string vara = tx_vara.Text;
+                string numero = tx_numero.Text;
+                string descricao = tx_descricao.Text;
+                string pessoa = comboBox_Pessoa.Text;
+                string data = data_txtmask.Text;
+                string tipo = tx_tipo.Text;
 
-            C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
-            processoList.RemoveAt(index);
-            processoList.Insert(index, a);
+                if (Verificar_Cliente.Cliente_Valido(pessoa, pessoaList))
+                {
+                    C_Processo a = new C_Processo(numero, descricao, data, vara, tipo, pessoa);
+                    processoList.RemoveAt(index);
+                    processoList.Insert(index, a);
 
 
-            dataGridView1.DataSource = null;
-            dataGridView1.Refresh();
-            dataGridView1.DataSource = processoList;
+                    dataGridView1.DataSource = null;
+                    dataGridView1.Refresh();
+                    dataGridView1.DataSource = processoList;
+
+                    button_salvaredit.Enabled = false;
+                    button_salvaredit.Visible = false;
+
+                    button_novo.Enabled = true;
+                    button_novo.Visible = true;
+
+                    button_excluir.Enabled = true;
+                    button_excluir.Visible = true;
+
+                    button_salvar.Enabled = true;
+                    button_salvar.Visible = true;
+
+                    button_menu.Enabled = true;
+                    button_menu.Visible = true;
+                    dataGridView1.Enabled = true;
+                    var c_processo = new C_Processo();
+                    if (c_processo.JsonSerializarLista(processoList, @"C:\Users\carol\OneDrive\Documentos\json\arquivoProcesso.json")) ;
+                }
+                else
+                {
+                    label3.Text = "Cliente não cadastrado";
+                }
             }
             catch(Exception ex)
             {
                 MessageBox.Show( $"Erro{ ex.Message}");
             }
-            button1.Enabled = false;
-            button1.Visible = false;
-
-            button2.Enabled = true;
-            button2.Visible = true;
-
-            button3.Enabled = true;
-            button3.Visible = true;
-
-            button5.Enabled = true;
-            button5.Visible = true;
             
-            button6.Enabled = true;
-            button6.Visible = true;
-            dataGridView1.Enabled = true;
-            var c_processo = new C_Processo();
-            if (c_processo.JsonSerializarLista(processoList, @"C:\Users\luizs\OneDrive\Documentos\New\2º ano\3º bimestre 2\Arquivo.json")) ;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -253,6 +277,11 @@ namespace Trabalho_de_POO
 
             //dataGridView1.DataSource = null;
             //dataGridView1.DataSource = processoList;
+        }
+
+        private void comboBox_Pessoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

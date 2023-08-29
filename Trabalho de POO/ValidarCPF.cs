@@ -1,4 +1,5 @@
-﻿static class ValidarCPF
+﻿using System.Collections.Generic;
+static class ValidarCPF
 {
     static private string cpf;
 
@@ -62,5 +63,32 @@
         }
 
         return true; //CPF válido
+    }
+
+    public static bool CPF_existente(string cpf,List<C_Pessoa> lista)
+    {
+        foreach(var pessoa in lista)
+        {
+            if (pessoa.CPF == cpf)
+            {
+                return false;
+                break;
+            }
+            
+        }
+        return true;
+    }
+    public static bool CPF_existente_Editar(string cpf, List<C_Pessoa> lista, string cpf_antigo)
+    {
+        foreach (var pessoa in lista)
+        {
+            if (pessoa.CPF == cpf && cpf != cpf_antigo)
+            {
+                return false;
+                break;
+            }
+
+        }
+        return true;
     }
 }

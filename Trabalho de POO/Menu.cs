@@ -12,9 +12,22 @@ namespace Trabalho_de_POO
 {
     public partial class Menu : Form
     {
+        List<C_Pessoa> list = new List<C_Pessoa> ();
         public Menu()
         {
             InitializeComponent();
+            try
+            {
+                list = C_Pessoa.JsonDesserializarLista(@"C:\Users\carol\OneDrive\Documentos\json\arquivoPessoa.json");
+                if (list.Count > 0)
+                {
+                    button1.Enabled = true;
+                }
+            }
+            catch(Exception ex)
+            {
+                
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,5 +50,9 @@ namespace Trabalho_de_POO
             
         }
 
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
